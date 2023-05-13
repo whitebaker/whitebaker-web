@@ -1,0 +1,78 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sSettings>
+            <ROOT>
+                <sheetTitle>
+                    Settings
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <model>
+                        <TCEforms>
+                            <label>3D Model (.glb)</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                            </config>
+                        </TCEforms>
+                    </model>
+                    <width>
+                        <label>
+                            3D viewport width
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>600</default>
+                            <size>10</size>
+                        </config>
+                    </width>
+                    <height>
+                        <label>
+                            3D viewport height
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>450</default>
+                            <size>10</size>
+                        </config>
+                    </height>
+                    <autoRotate>
+                        <label>
+                            Rotate the object automatically
+                        </label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="0">Yes</numIndex>
+                                    <numIndex index="1">1</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="0">No</numIndex>
+                                    <numIndex index="1">0</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </autoRotate>
+                </el>
+            </ROOT>
+        </sSettings>
+    </sheets>
+</T3DataStructure>

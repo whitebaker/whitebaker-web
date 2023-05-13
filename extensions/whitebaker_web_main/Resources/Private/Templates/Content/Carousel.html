@@ -1,0 +1,21 @@
+<f:layout name="Headerless" />
+<f:section name="Main">
+
+    <div class="ce-whitebaker-carousel">
+
+        <div class="swiper swiper-carousel">
+            <div class="swiper-wrapper">
+                <f:for each="{images}" as="image">
+                    <div class="swiper-slide">
+                      <f:image image="{image}" alt="{image.alternative}" height="257"/>
+                    </div>
+                </f:for>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</f:section>

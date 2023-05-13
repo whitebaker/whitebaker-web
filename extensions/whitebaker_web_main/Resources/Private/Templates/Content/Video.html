@@ -1,0 +1,61 @@
+<f:layout name="Headerless" />
+<f:section name="Main">
+
+    <div class="ce-whitebaker-video">
+
+        <div class="video-player" id="video-player">
+
+            <div class="playback-animation playback-icons" id="playback-animation">
+                <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/play.svg" alt="Play" />
+                <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/pause.svg" alt="Pause" class="hidden" />
+            </div>
+
+            <f:media id="video" file="{video.0}" width="600" height="450"
+                additionalConfig="{muted: '1', controls: '1'}"
+                additionalAttributes="{preload='metadata', poster: image.0.originalFile.publicUrl}"
+            />
+
+            <div class="video-controls hidden" id="video-controls">
+
+                <button data-title="Play" id="play" class="playback-icons">
+                    <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/play.svg" alt="Play" />
+                    <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/pause.svg" alt="Pause" class="hidden" />
+                </button>
+
+                <div class="video-progress">
+                    <progress id="progress-bar" value="0" min="0"></progress>
+                    <input class="seek" id="seek" value="0" min="0" type="range" step="1">
+                    <div class="seek-tooltip" id="seek-tooltip">00:00</div>
+                </div>
+
+                <div class="time">
+                    <time id="time-elapsed">00:00</time>
+                    <span>/</span>
+                    <time id="duration">00:00</time>
+                </div>
+
+                <f:if condition="{flexFormData.enableAudio}">
+                    <div class="volume-controls">
+                        <button data-title="Mute" class="volume-button" id="volume-button">
+                            <f:image id="volume-button-mute" src="EXT:whitebaker_web_main/Resources/Public/Icons/volume-mute.svg" alt="Volume Muted" class="hidden" />
+                            <f:image id="volume-button-low" src="EXT:whitebaker_web_main/Resources/Public/Icons/volume-low.svg" alt="Volume Low" class="hidden" />
+                            <f:image id="volume-button-high" src="EXT:whitebaker_web_main/Resources/Public/Icons/volume-high.svg" alt="Play" />
+                        </button>
+                        <input class="volume" id="volume" value="1" data-mute="0.5" type="range" max="1" min="0" step="0.01">
+                    </div>
+                </f:if>
+
+                <f:if condition="{flexFormData.enableFullscreen}">
+                    <button data-title="Full screen" class="fullscreen-button" id="fullscreen-button">
+                        <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/fullscreen.svg" alt="Fullscreen" />
+                        <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/fullscreen-exit.svg" alt="Exit Fullscreen" class="hidden" />
+                    </button>
+                </f:if>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</f:section>

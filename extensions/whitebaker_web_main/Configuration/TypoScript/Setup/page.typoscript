@@ -1,0 +1,95 @@
+page = PAGE
+page {
+  typeNum = 0
+  meta.viewport = width=device-width, initial-scale=1, maximum-scale=1
+}
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+   templateName = TEXT
+   templateName {
+     cObject = TEXT
+     cObject {
+       data = pagelayout
+       required = 1
+      case = ucfirst
+      split {
+        token = pagets__
+        cObjNum = 1
+        1.current = 1
+      }
+    }
+
+    ifEmpty = Default
+  }
+
+  templateRootPaths {
+    0 = EXT:whitebaker_web_main/Resources/Private/Templates/Page/
+    1 = {$page.fluidtemplate.templateRootPath}
+  }
+
+  partialRootPaths {
+    0 = EXT:whitebaker_web_main/Resources/Private/Partials/Page/
+    1 = {$page.fluidtemplate.partialRootPath}
+  }
+
+  layoutRootPaths {
+    0 = EXT:whitebaker_web_main/Resources/Private/Layouts/Page/
+    1 = {$page.fluidtemplate.layoutRootPath}
+  }
+
+  dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+         levels = 1
+         includeSpacer = 1
+         as = mainnavigation
+      }
+      20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      20 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 0
+        as = content
+      }
+      30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      30 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 1
+        as = navigation
+      }
+   }
+
+}
+
+page.includeCSS {
+    # Pattern typo3_encore:entryName
+    app = typo3_encore:app
+    # If you want to ensure that this file is loaded first uncomment the next line
+    # app.forceOnTop = 1
+}
+
+page.includeJS {
+    # Pattern typo3_encore:entryName
+    # app = typo3_encore:app
+    # If you want to ensure that this file is loaded first uncomment the next line
+    # app.forceOnTop = 1
+}
+
+page.includeJSFooter {
+    # Pattern typo3_encore:entryName
+    app = typo3_encore:app
+}
+
+
+    page.includeCSS.portfolio = typo3_encore:portfolio
+    page.includeJSFooter.portfolio = typo3_encore:portfolio
+[tree.pagelayout == "pagets__Portfolio"]
+    #page.includeCSS >
+    #page.includeJS >
+    #page.includeJSFooter >
+
+    page.includeCSS.portfolio = typo3_encore:portfolio
+    page.includeJSFooter.portfolio = typo3_encore:portfolio
+[END]

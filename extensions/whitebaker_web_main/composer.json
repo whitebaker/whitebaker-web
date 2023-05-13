@@ -1,0 +1,22 @@
+{
+    "name": "whitebaker/whitebaker-web-main",
+    "type": "typo3-cms-extension",
+    "description": "Whitebaker Website Site Package",
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^12.0.0|dev-main",
+        "typo3/cms-fluid-styled-content": "^12.0.0|dev-main"
+    },
+    "homepage": "https://www.whitebaker.org",
+    "license": ["GPL-2.0-or-later"],
+    "autoload": {
+        "psr-4": {
+            "Whitebaker\\WhitebakerWebMain\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "whitebaker_web_main"
+        }
+    }
+}

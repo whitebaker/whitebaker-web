@@ -1,0 +1,42 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.grid1x1 > div {
+  width: 50%;
+}
+
+.grid3x1 > div:nth-child(even) {
+  width: 40%;
+}
+
+.grid3x1 > div:nth-child(odd) {
+  width: 60%;
+}
+
+@media only screen and (max-width: 991px) {
+    .grid {
+      flex-direction: column;
+    }
+    .grid1x1 > div {
+      width: 100%;
+    }
+
+    .grid3x1 > div:nth-child(even) {
+      width: 100%;
+    }
+
+    .grid3x1 > div:nth-child(odd) {
+      width: 100%;
+    }
+
+    .mobile-first {
+        order: 1;
+    }
+
+    .mobile-last {
+        order: 2;
+    }
+}

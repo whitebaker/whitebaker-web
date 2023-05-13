@@ -1,0 +1,21 @@
+<f:layout name="Default" />
+
+ <f:section name="Main">
+
+   <main role="main">
+
+     <div>
+
+       <f:for each="{content}" as="contentElement">
+           <f:cObject
+               typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+               data="{contentElement.data}"
+               table="tt_content"
+           />
+       </f:for>
+
+     </div>
+
+  </main>
+
+</f:section>

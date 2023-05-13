@@ -1,0 +1,16 @@
+
+<div>
+  <ul class="">
+     <f:for each="{mainnavigation}" as="mainnavigationItem">
+        <li class="{f:if(condition: mainnavigationItem.active, then: 'active')}">
+           <a class=""
+              href="{mainnavigationItem.link}"
+              target="{mainnavigationItem.target}"
+              title="{mainnavigationItem.title}"
+              >
+              {mainnavigationItem.title}
+           </a>
+        </li>
+     </f:for>
+  </ul>
+</div>

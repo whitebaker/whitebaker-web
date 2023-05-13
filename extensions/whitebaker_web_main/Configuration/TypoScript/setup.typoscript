@@ -1,0 +1,224 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:whitebaker_web_main/Configuration/TypoScript/Setup/*.typoscript'
+
+lib.contentElement {
+    layoutRootPaths.200 = EXT:whitebaker_web_main/Resources/Private/Layouts/Content/
+    templateRootPaths.200 = EXT:whitebaker_web_main/Resources/Private/Templates/Content/
+    partialRootPaths.200 = EXT:whitebaker_web_main/Resources/Private/Partials/Content/
+}
+
+tt_content {
+
+
+    whitebaker_navigation =< lib.contentElement
+    whitebaker_navigation {
+        templateName = Navigation
+
+        dataProcessing {
+            10 = database-query
+            10 {
+                table = tt_content
+                as = content
+                pidInList = this
+                where = {#sectionIndex} = 1
+                orderBy = sorting
+            }
+        }
+    }
+
+    whitebaker_picture =< lib.contentElement
+    whitebaker_picture {
+        templateName = Picture
+
+        dataProcessing.10 = files
+        dataProcessing.10 {
+            as = images
+            references.fieldName = image
+            references.table = tt_content
+            sorting = title
+            sorting.direction = descending
+        }
+    }
+
+    whitebaker_card =< lib.contentElement
+    whitebaker_card {
+        templateName = Card
+    }
+
+    whitebaker_carousel =< lib.contentElement
+    whitebaker_carousel {
+        templateName = Carousel
+
+        dataProcessing.10 = flex-form
+        dataProcessing.10 {
+            as = flexform
+            fieldName = pi_flexform
+        }
+
+        dataProcessing.20 = files
+        dataProcessing.20 {
+            as = images
+            references.fieldName = image
+            references.table = tt_content
+            sorting = title
+            sorting.direction = descending
+        }
+    }
+
+    whitebaker_compare =< lib.contentElement
+    whitebaker_compare {
+        templateName = Compare
+
+        dataProcessing.10 = flex-form
+
+        dataProcessing.20 = files
+        dataProcessing.20 {
+            as = imageLeft
+            references {
+              table = tt_content
+              fieldName = imageLeft
+            }
+        }
+
+        dataProcessing.21 = files
+        dataProcessing.21 {
+            as = imageRight
+            references {
+              table = tt_content
+              fieldName = imageRight
+            }
+        }
+    }
+
+    whitebaker_three =< lib.contentElement
+    whitebaker_three {
+        templateName = Three
+
+        dataProcessing.10 = flex-form
+
+        dataProcessing.20 = files
+        dataProcessing.20 {
+            as = model
+            references {
+              table = tt_content
+              fieldName = model
+            }
+        }
+    }
+
+    whitebaker_unity =< lib.contentElement
+    whitebaker_unity {
+        templateName = Unity
+
+        dataProcessing.10 = flex-form
+
+        dataProcessing.20 = files
+        dataProcessing.20 {
+            as = imagePlaceholder
+            references {
+              table = tt_content
+              fieldName = imagePlaceholder
+            }
+        }
+
+        dataProcessing.21 = files
+        dataProcessing.21 {
+            as = imageFrame
+            references {
+              table = tt_content
+              fieldName = imageFrame
+            }
+        }
+
+        dataProcessing.30 = files
+        dataProcessing.30 {
+            as = buildFileData
+            references {
+              table = tt_content
+              fieldName = buildFileData
+            }
+        }
+
+        dataProcessing.31 = files
+        dataProcessing.31 {
+            as = buildFileFramework
+            references {
+              table = tt_content
+              fieldName = buildFileFramework
+            }
+        }
+
+        dataProcessing.32 = files
+        dataProcessing.32 {
+            as = buildFileLoader
+            references {
+              table = tt_content
+              fieldName = buildFileLoader
+            }
+        }
+
+        dataProcessing.33 = files
+        dataProcessing.33 {
+            as = buildFileWasm
+            references {
+              table = tt_content
+              fieldName = buildFileWasm
+            }
+        }
+    }
+
+    whitebaker_video =< lib.contentElement
+    whitebaker_video {
+        templateName = Video
+
+        dataProcessing.10 = flex-form
+
+        dataProcessing.20 = files
+        dataProcessing.20 {
+            as = image
+            references.fieldName = image
+            references.table = tt_content
+            sorting = title
+            sorting.direction = descending
+        }
+
+        dataProcessing.30 = files
+        dataProcessing.30 {
+            as = video
+            references.fieldName = media
+            references.table = tt_content
+            sorting = title
+            sorting.direction = descending
+        }
+    }
+
+}
+
+
+
+tt_content.grid-50-50 < lib.contentElement
+tt_content.grid-50-50 {
+  templateName = Grid-50-50
+  templateRootPaths.10 = EXT:whitebaker_web_main/Resources/Private/Templates/Container/
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.grid-67-33 < lib.contentElement
+tt_content.grid-67-33 {
+  templateName = Grid-67-33
+  templateRootPaths.10 = EXT:whitebaker_web_main/Resources/Private/Templates/Container/
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.grid-33-67 < lib.contentElement
+tt_content.grid-33-67 {
+  templateName = Grid-33-67
+  templateRootPaths.10 = EXT:whitebaker_web_main/Resources/Private/Templates/Container/
+  dataProcessing {
+    100 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:whitebaker_web_main/Resources/Private/Language/Modules/de.locallang.xlf" date="2020-10-18T18:20:51Z" product-name="my_ext">
+        <header/>
+        <body>
+
+            <trans-unit id="whitebaker_navigation_title" resname="whitebaker_navigation_title" approved="yes">
+                <source>Navigation</source>
+                <target>Navigation</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_navigation_description" resname="whitebaker_navigation_description" approved="yes">
+                <source>A navigation generated from sections on a page</source>
+                <target>Eine aus den Sektionen auf der Seite generierte Navigation</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_picture_title" resname="whitebaker_picture_title" approved="yes">
+                <source>Picture</source>
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_picture_description" resname="whitebaker_picture_description" approved="yes">
+                <source>A simple picture element</source>
+                <target>Ein einfaches Bild-Element</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_card_title" resname="whitebaker_card_title" approved="yes">
+                <source>Card</source>
+                <target>Karte</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_card_description" resname="whitebaker_card_description" approved="yes">
+                <source>Text element inside a card</source>
+                <target>Text-Element in einer Karte</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_carousel_title" resname="whitebaker_carousel_title" approved="yes">
+                <source>Carousel</source>
+                <target>Karussell</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_carousel_description" resname="whitebaker_carousel_description" approved="yes">
+                <source>Carousel with Images</source>
+                <target>Karussell mit Bildern</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_compare_title" resname="whitebaker_compare_title" approved="yes">
+                <source>Compare</source>
+                <target>Vergleich</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_compare_description" resname="whitebaker_compare_description" approved="yes">
+                <source>Compare two images</source>
+                <target>Vergleich von zwei Bildern</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_three_title" resname="whitebaker_three_title" approved="yes">
+                <source>Three</source>
+                <target>Drei</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_three_description" resname="whitebaker_three_description" approved="yes">
+                <source>Displays a 3d model</source>
+                <target>Stellt ein 3d Modell dar</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_unity_title" resname="whitebaker_unity_title" approved="yes">
+                <source>Unity</source>
+                <target>Unity</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_unity_description" resname="whitebaker_unity_description" approved="yes">
+                <source>Unity WebGL game</source>
+                <target>Unity WebGL-Spiel</target>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_video_title" resname="whitebaker_video_title" approved="yes">
+                <source>Video</source>
+                <target>Video</target>
+            </trans-unit>
+            <trans-unit id="whitebaker_video_description" resname="whitebaker_video_description" approved="yes">
+                <source>Einfacher Video Player</source>
+                <target>Simple video player</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

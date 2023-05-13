@@ -1,0 +1,40 @@
+<f:layout name="Headerless" />
+<f:section name="Main">
+
+    <div class="ce-whitebaker-three">
+
+        <div
+            class="three-module"
+            data-id={data.uid}
+            data-file="{model.0.originalFile.publicUrl}"
+            data-auto-rotate="{flexFormData.autoRotate}"
+            data-width="{flexFormData.width}"
+            data-height="{flexFormData.height}"
+        >
+            <div class="three-viewport" id="three-viewport-{data.uid}"></div>
+            <button class="three-button-inspect" id="three-button-inspect-{data.uid}">
+                <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/search.svg" alt="Open zoom view" />
+            </button>
+            <button class="three-button-close" id="three-button-close-{data.uid}">
+                <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/x-lg.svg" alt="Close zoom view" />
+            </button>
+            <div class="three-legend">
+                <div>
+                    <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/mouse_left.png" alt="Left Mouse Icon" />
+                    <span>Rotate</span>
+                </div>
+                <div>
+                    <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/mouse_right.png" alt="Right Mouse Icon" />
+                    <span>Move</span>
+                </div>
+                <div>
+                    <f:image src="EXT:whitebaker_web_main/Resources/Public/Icons/mouse_middle.png" alt="Middle Mouse Icon" />
+                    <span>Zoom</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</f:section>

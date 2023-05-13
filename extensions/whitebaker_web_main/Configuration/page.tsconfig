@@ -1,0 +1,85 @@
+@import 'EXT:whitebaker_web_main/Configuration/TsConfig/Page/PageLayout/*.tsconfig'
+
+mod.wizards.newContentElement.wizardItems {
+
+   whitebaker {
+      header = Whitebaker
+      elements {
+
+          whitebaker_navigation {
+             iconIdentifier = content-text
+             title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_navigation_title
+             description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_navigation_description
+             tt_content_defValues {
+                CType = whitebaker_navigation
+             }
+          }
+
+          whitebaker_picture {
+             iconIdentifier = content-text
+             title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_picture_title
+             description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_picture_description
+             tt_content_defValues {
+                CType = whitebaker_picture
+             }
+          }
+
+         whitebaker_card {
+            iconIdentifier = content-text
+            title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_card_title
+            description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_card_description
+            tt_content_defValues {
+               CType = whitebaker_card
+            }
+         }
+
+         whitebaker_carousel {
+            iconIdentifier = content-text
+            title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_carousel_title
+            description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_carousel_description
+            tt_content_defValues {
+               CType = whitebaker_carousel
+            }
+         }
+
+         whitebaker_compare {
+            iconIdentifier = content-text
+            title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_compare_title
+            description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_compare_description
+            tt_content_defValues {
+               CType = whitebaker_compare
+            }
+         }
+
+         whitebaker_three {
+            iconIdentifier = content-text
+            title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_three_title
+            description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_three_description
+            tt_content_defValues {
+               CType = whitebaker_three
+            }
+         }
+
+         whitebaker_unity {
+            iconIdentifier = content-text
+            title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_unity_title
+            description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_unity_description
+            tt_content_defValues {
+               CType = whitebaker_unity
+            }
+         }
+
+         whitebaker_video {
+            iconIdentifier = content-text
+            title = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_video_title
+            description = LLL:EXT:whitebaker_web_main/Resources/Private/Language/locallang.xlf:whitebaker_video_description
+            tt_content_defValues {
+               CType = whitebaker_video
+            }
+         }
+
+      }
+      show := addToList(whitebaker_card,whitebaker_carousel,whitebaker_compare,whitebaker_three,whitebaker_unity,whitebaker_video,whitebaker_navigation,whitebaker_picture)
+   }
+
+}

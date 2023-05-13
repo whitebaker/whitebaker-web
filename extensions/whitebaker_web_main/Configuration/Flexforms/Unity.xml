@@ -1,0 +1,233 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sSettings>
+            <ROOT>
+                <sheetTitle>
+                    Settings
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <width>
+                        <label>
+                            Game window width
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>640</default>
+                            <size>10</size>
+                        </config>
+                    </width>
+                    <height>
+                        <label>
+                            Game window height
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>480</default>
+                            <size>10</size>
+                        </config>
+                    </height>
+                </el>
+            </ROOT>
+        </sSettings>
+        <sImages>
+            <ROOT>
+                <sheetTitle>
+                    Images
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <imagePlaceholder>
+                        <TCEforms>
+                            <label>Placeholder image (before the game is loaded)</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <overrideChildTca>
+                                  <columns type="array">
+                                    <uid_local type="array">
+                                      <config type="array">
+                                        <appearance type="array">
+                                          <elementBrowserType>file</elementBrowserType>
+                                          <elementBrowserAllowed>jpg,jpeg,png,svg,gif</elementBrowserAllowed>
+                                        </appearance>
+                                      </config>
+                                    </uid_local>
+                                  </columns>
+                                  <types type="array">
+                                    <numIndex index="2">
+                                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                    </numIndex>
+                                  </types>
+                                </overrideChildTca>
+                            </config>
+                        </TCEforms>
+                    </imagePlaceholder>
+                    <imageFrame>
+                        <TCEforms>
+                            <label>Frame image (around the game window)</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <overrideChildTca>
+                                  <columns type="array">
+                                    <uid_local type="array">
+                                      <config type="array">
+                                        <appearance type="array">
+                                          <elementBrowserType>file</elementBrowserType>
+                                          <elementBrowserAllowed>jpg,jpeg,png,svg,gif</elementBrowserAllowed>
+                                        </appearance>
+                                      </config>
+                                    </uid_local>
+                                  </columns>
+                                  <types type="array">
+                                    <numIndex index="2">
+                                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                    </numIndex>
+                                  </types>
+                                </overrideChildTca>
+                            </config>
+                        </TCEforms>
+                    </imageFrame>
+                    <padding>
+                        <label>
+                            Frame thickness (padding between the outer frame and the inner game window)
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>30</default>
+                            <size>10</size>
+                        </config>
+                    </padding>
+                </el>
+            </ROOT>
+        </sImages>
+        <sBuild>
+            <ROOT>
+                <sheetTitle>
+                    Build
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <buildFileData>
+                        <TCEforms>
+                            <label>Unity build file 1: *.data.gz</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                            </config>
+                        </TCEforms>
+                    </buildFileData>
+                    <buildFileFramework>
+                        <TCEforms>
+                            <label>Unity build file 2: *.framework.js.gz</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                            </config>
+                        </TCEforms>
+                    </buildFileFramework>
+                    <buildFileLoader>
+                        <TCEforms>
+                            <label>Unity build file 3: *.loader.js</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                            </config>
+                        </TCEforms>
+                    </buildFileLoader>
+                    <buildFileWasm>
+                        <TCEforms>
+                            <label>Unity build file 4: *.wasm.gz</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                            </config>
+                        </TCEforms>
+                    </buildFileWasm>
+                </el>
+            </ROOT>
+        </sBuild>
+    </sheets>
+</T3DataStructure>

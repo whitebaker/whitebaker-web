@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:whitebaker_web_main/Resources/Private/Language/Modules/locallang.xlf" date="2020-10-18T18:20:51Z" product-name="my_ext">
+        <header/>
+        <body>
+
+            <trans-unit id="whitebaker_navigation_title" resname="whitebaker_navigation_title">
+                <source>Navigation</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_navigation_description" resname="whitebaker_navigation_description">
+                <source>A navigation generated from sections on a page</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_picture_title" resname="whitebaker_picture_title">
+                <source>Picture</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_picture_description" resname="whitebaker_picture_description">
+                <source>A simple picture element</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_card_title" resname="whitebaker_card_title">
+                <source>Card</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_card_description" resname="whitebaker_card_description">
+                <source>Text element inside a card</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_carousel_title" resname="whitebaker_carousel_title">
+                <source>Carousel</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_carousel_description" resname="whitebaker_carousel_description">
+                <source>Carousel with Images</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_compare_title" resname="whitebaker_compare_title">
+                <source>Compare</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_compare_description" resname="whitebaker_compare_description">
+                <source>Compare two images</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_three_title" resname="whitebaker_three_title">
+                <source>Three</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_three_description" resname="whitebaker_three_description">
+                <source>Display a 3d model</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_unity_title" resname="whitebaker_unity_title">
+                <source>Unity</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_unity_description" resname="whitebaker_unity_description">
+                <source>Unity WebGL game</source>
+            </trans-unit>
+
+            <trans-unit id="whitebaker_video_title" resname="whitebaker_video_title">
+                <source>Video</source>
+            </trans-unit>
+            <trans-unit id="whitebaker_video_description" resname="whitebaker_video_description">
+                <source>Simple video player</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,28 @@
+.compare-module {
+  position: relative;
+  height: 480px;
+  width: 100%;
+}
+
+.compare-image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+  width: 100%;
+  img {
+    display:block;
+    vertical-align:middle;
+  }
+}
+
+.compare-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #dedede;
+  opacity: 0.8;
+  border-radius: 50%;
+}

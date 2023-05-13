@@ -1,0 +1,125 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sImages>
+            <ROOT>
+                <sheetTitle>
+                    Images
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <imageLeft>
+                        <TCEforms>
+                            <label>Left image</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <overrideChildTca>
+                                  <columns type="array">
+                                    <uid_local type="array">
+                                      <config type="array">
+                                        <appearance type="array">
+                                          <elementBrowserType>file</elementBrowserType>
+                                          <elementBrowserAllowed>jpg,jpeg,png,svg,gif</elementBrowserAllowed>
+                                        </appearance>
+                                      </config>
+                                    </uid_local>
+                                  </columns>
+                                  <types type="array">
+                                    <numIndex index="2">
+                                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                    </numIndex>
+                                  </types>
+                                </overrideChildTca>
+                            </config>
+                        </TCEforms>
+                    </imageLeft>
+                    <imageRight>
+                        <TCEforms>
+                            <label>Right image</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                          <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <overrideChildTca>
+                                  <columns type="array">
+                                    <uid_local type="array">
+                                      <config type="array">
+                                        <appearance type="array">
+                                          <elementBrowserType>file</elementBrowserType>
+                                          <elementBrowserAllowed>jpg,jpeg,png,svg,gif</elementBrowserAllowed>
+                                        </appearance>
+                                      </config>
+                                    </uid_local>
+                                  </columns>
+                                  <types type="array">
+                                    <numIndex index="2">
+                                      <showitem>--palette--;;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                    </numIndex>
+                                  </types>
+                                </overrideChildTca>
+                            </config>
+                        </TCEforms>
+                    </imageRight>
+                </el>
+            </ROOT>
+        </sImages>
+        <sSettings>
+            <ROOT>
+                <sheetTitle>
+                    Settings
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <width>
+                        <label>
+                            Image comparison width
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>600</default>
+                            <size>10</size>
+                        </config>
+                    </width>
+                    <height>
+                        <label>
+                            Image comparison height
+                        </label>
+                        <config>
+                            <type>number</type>
+                            <default>400</default>
+                            <size>10</size>
+                        </config>
+                    </height>
+                </el>
+            </ROOT>
+        </sSettings>
+    </sheets>
+</T3DataStructure>

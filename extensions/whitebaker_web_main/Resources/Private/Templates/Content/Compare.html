@@ -1,0 +1,26 @@
+<f:layout name="Headerless" />
+<f:section name="Main">
+
+    <div class="ce-whitebaker-compare">
+
+        <div
+            class="compare-module"
+            data-slider="compare-slider-{data.uid}"
+            data-overlay="compare-overlay-{data.uid}"
+            data-width="{flexFormData.width}"
+            data-height="{flexFormData.height}"
+        >
+            <div class="compare-image">
+                <f:image image="{imageLeft.0}" alt="" width="{flexFormData.width}" height="{flexFormData.height}" />
+            </div>
+            <div class="compare-image" id="compare-overlay-{data.uid}">
+                <f:image image="{imageRight.0}" alt="" width="{flexFormData.width}" height="{flexFormData.height}" />
+            </div>
+            <div class="compare-slider" id="compare-slider-{data.uid}"></div>
+        </div>
+
+        <f:format.html>{data.bodytext}</f:format.html>
+
+    </div>
+
+</f:section>

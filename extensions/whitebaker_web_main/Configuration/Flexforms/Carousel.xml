@@ -1,0 +1,36 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <sheetTitle>
+                    Settings
+                </sheetTitle>
+                <type>array</type>
+                <el>
+                    <showNavDots>
+                        <label>
+                            Show navigation dots
+                        </label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="0">Yes</numIndex>
+                                    <numIndex index="1">true</numIndex>
+                                </numIndex>
+                                <numIndex index="1">
+                                    <numIndex index="0">No</numIndex>
+                                    <numIndex index="1">false</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </showNavDots>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

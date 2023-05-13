@@ -1,0 +1,97 @@
+
+.ce-whitebaker-three {
+
+}
+
+.three-module {
+    .three-viewport {
+        canvas {
+            margin: auto;
+        }
+    }
+    position: relative;
+    z-index: 80;
+    .three-button-inspect {
+        display: block;
+        @media only screen and (max-width: 400px) {
+          display: none;
+        }
+        position: absolute;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .three-button-close {
+        display: none;
+        position: absolute;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        top: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &.inspect {
+        z-index: 120;
+        position: fixed;
+        width: auto;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.8);
+        //box-shadow: 1px 3px 6px 1px rgba(0,0,0,0.6);
+        .three-button-inspect {
+            display: none;
+        }
+        .three-button-close {
+            display: block;
+        }
+        .three-legend {
+            display: flex;
+        }
+    }
+    .three-legend {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        left: 0;
+        div {
+            margin: 0 30px;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        span {
+            color: #dedede;
+            font-size: 32px;
+            line-height: 60px;
+            height: 60px;
+            vertical-align: text-bottom;
+        }
+    }
+}
+
+.three-module.inspect {
+
+}

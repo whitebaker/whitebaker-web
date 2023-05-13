@@ -1,0 +1,32 @@
+<f:layout name="Portfolio" />
+
+<f:section name="Main">
+
+    <main role="main">
+
+        <div id="portfolio-navigation">
+            <f:for each="{navigation}" as="navigationElement">
+                <f:cObject
+                    typoscriptObjectPath="tt_content.{navigationElement.data.CType}"
+                    data="{navigationElement.data}"
+                    table="tt_content"
+                />
+            </f:for>
+        </div>
+
+        <div id="portfolio-content">
+            <div class="container">
+
+                <f:for each="{content}" as="contentElement">
+                    <f:cObject
+                        typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+                        data="{contentElement.data}"
+                        table="tt_content"
+                    />
+                </f:for>
+            </div>
+        </div>
+
+    </main>
+
+</f:section>

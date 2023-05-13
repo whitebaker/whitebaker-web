@@ -1,0 +1,19 @@
+{
+  "entrypoints": {
+    "main": {
+      "js": [
+        "/build/runtime.js",
+        "/build/main.js"
+      ]
+    },
+    "portfolio": {
+      "js": [
+        "/build/runtime.js",
+        "/build/portfolio.js"
+      ],
+      "css": [
+        "/build/portfolio.css"
+      ]
+    }
+  }
+}

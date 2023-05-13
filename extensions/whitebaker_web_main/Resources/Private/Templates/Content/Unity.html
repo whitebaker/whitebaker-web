@@ -1,0 +1,45 @@
+<f:layout name="Headerless" />
+<f:section name="Main">
+
+    <div class="ce-whitebaker-unity">
+
+        <div class="unity-module"
+            data-id={data.uid}
+            data-height={flexFormData.height}
+            data-width={flexFormData.width}
+            data-padding={flexFormData.padding}
+            data-build-file-data={buildFileData.0.originalFile.publicUrl}
+            data-build-file-framework={buildFileFramework.0.originalFile.publicUrl}
+            data-build-file-loader={buildFileLoader.0.originalFile.publicUrl}
+            data-build-file-wasm={buildFileWasm.0.originalFile.publicUrl}
+            style="width: {flexFormData.width}px; height: {flexFormData.height}px;"
+        >
+            <div class="unity-container" id="unity-container-{data.uid}" style="padding: {flexFormData.padding}px">
+                <canvas id="unity-canvas-{data.uid}" width={flexFormData.width} height={flexFormData.height}></canvas>
+                <div id="unity-loading-bar-{data.uid}">
+                    <div id="unity-logo-{data.uid}"></div>
+                    <div id="unity-progress-bar-empty-{data.uid}">
+                        <div id="unity-progress-bar-full-{data.uid}"></div>
+                    </div>
+                </div>
+                <div id="unity-warning-{data.uid}"> </div>
+            </div>
+
+            <div class="unity-placeholder" id="unity-placeholder-{data.uid}" style="padding: {flexFormData.padding}px">
+                <f:if condition="{imagePlaceholder.0}">
+                    <f:image image="{imagePlaceholder.0}" alt="" height="{flexFormData.height}" width="{flexFormData.width}" />
+                </f:if>
+                <button class="button" id="unity-button-{data.uid}">Try it!</button>
+            </div>
+
+            <f:if condition="{imageFrame.0}">
+                <div class="unity-frame">
+                    <f:image image="{imageFrame.0}" alt="" height="{flexFormData.height}" width="{flexFormData.width}" />
+                </div>
+            </f:if>
+
+        </div>
+
+    </div>
+
+</f:section>

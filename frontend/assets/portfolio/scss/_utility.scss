@@ -1,0 +1,50 @@
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.frame-space-before {
+    &-extra-small {
+        margin-top: 50px;
+    }
+    &-small {
+        margin-top: 100px;
+    }
+    &-medium {
+        margin-top: 150px;
+    }
+    &-large {
+        margin-top: 200px;
+        @media only screen and (max-width: 991px) {
+            margin-top: 150px;
+        }
+    }
+    &-extra-large {
+        margin-top: 250px;
+    }
+}
+
+.frame-space-after {
+    &-extra-small {
+        margin-bottom: 50px;
+    }
+    &-small {
+        margin-bottom: 100px;
+    }
+    &-medium {
+        margin-bottom: 150px;
+    }
+    &-large {
+        margin-bottom: 200px;
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 150px;
+        }
+    }
+    &-extra-large {
+        margin-bottom: 250px;
+    }
+}

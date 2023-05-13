@@ -1,0 +1,19 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+mysitepackage.page.title = Whitebaker Web
+
+page {
+  fluidtemplate {
+    layoutRootPath = EXT:whitebaker_web_main/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:whitebaker_web_main/Resources/Private/Partials/Page/
+    templateRootPath = EXT:whitebaker_web_main/Resources/Private/Templates/Page/
+  }
+}
+
+plugin.tx_typo3encore {
+    settings {
+        # These paths are relative to the web root (public) directory
+        entrypointJsonPath = build/entrypoints.json
+        manifestJsonPath =  build/manifest.json
+    }
+}

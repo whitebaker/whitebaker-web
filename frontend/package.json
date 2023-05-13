@@ -1,0 +1,16 @@
+{
+    "devDependencies": {
+        "@symfony/webpack-encore": "^4.3.0",
+        "file-loader": "^6.2.0",
+        "sass": "^1.62.1",
+        "sass-loader": "^13.2.2",
+        "swiper": "^9.2.3",
+        "three": "^0.151.3"
+    },
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    }
+}
